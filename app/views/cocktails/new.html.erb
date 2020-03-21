@@ -1,6 +1,13 @@
-<%= simple_form_for @cocktail do |f| %>
-   <%= f.input :name%>
-   <%#= f.associations :ingredient%>
-   <%= f.input :photo, as: :file %>
-   <%= f.submit 'Submit', class: "new_cocktail" %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 offset-sm-4" id="cocktail-new">
+      <div class="form-pet">
+        <%= simple_form_for @cocktail do |f| %>
+           <%= f.input :name%>
+           <%#= f.associations :ingredient%>
+           <%= f.input :photo, as: :file %>
+           <%= f.submit 'Submit', class: "new_cocktail" %>
+        <% end %>
+    </div>
+  </div>
+</div>
